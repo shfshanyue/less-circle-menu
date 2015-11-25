@@ -1,0 +1,149 @@
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  padding: 179px;
+  border: 1px dotted #aaa;
+  border-radius: 200px;
+}
+.circle-container {
+  position: relative;
+  height: 100%;
+  background-color: #aaa;
+}
+.circle-container:hover > .circle:nth-child(1) {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #357;
+  transform: translate(0px, 200px);
+  opacity: 1;
+  font-size: 1em;
+  transition: all 800ms ease;
+}
+.circle-container:hover > .circle:nth-child(2) {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #357;
+  transform: translate(100px, 173px);
+  opacity: 1;
+  font-size: 1em;
+  transition: all 800ms ease;
+}
+.circle-container:hover > .circle:nth-child(3) {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #357;
+  transform: translate(173px, 100px);
+  opacity: 1;
+  font-size: 1em;
+  transition: all 800ms ease;
+}
+.circle-container:hover > .circle:nth-child(4) {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #357;
+  transform: translate(200px, 0px);
+  opacity: 1;
+  font-size: 1em;
+  transition: all 800ms ease;
+}
+.circle-container:hover > .circle:nth-child(5) {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #357;
+  transform: translate(173px, -100px);
+  opacity: 1;
+  font-size: 1em;
+  transition: all 800ms ease;
+}
+.circle-container:hover > .circle:nth-child(6) {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #357;
+  transform: translate(100px, -173px);
+  opacity: 1;
+  font-size: 1em;
+  transition: all 800ms ease;
+}
+.circle-container:hover > .circle:nth-child(7) {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #357;
+  transform: translate(0px, -200px);
+  opacity: 1;
+  font-size: 1em;
+  transition: all 800ms ease;
+}
+.circle-container:hover > .circle:nth-child(8) {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #357;
+  transform: translate(-100px, -173px);
+  opacity: 1;
+  font-size: 1em;
+  transition: all 800ms ease;
+}
+.circle-container:hover > .circle:nth-child(9) {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #357;
+  transform: translate(-173px, -100px);
+  opacity: 1;
+  font-size: 1em;
+  transition: all 800ms ease;
+}
+.circle-container:hover > .circle:nth-child(10) {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #357;
+  transform: translate(-200px, 0px);
+  opacity: 1;
+  font-size: 1em;
+  transition: all 800ms ease;
+}
+.circle-container:hover > .circle:nth-child(11) {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #357;
+  transform: translate(-173px, 100px);
+  opacity: 1;
+  font-size: 1em;
+  transition: all 800ms ease;
+}
+.circle-container:hover > .circle:nth-child(12) {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #357;
+  transform: translate(-100px, 173px);
+  opacity: 1;
+  font-size: 1em;
+  transition: all 800ms ease;
+}
+.circle {
+  width: 0;
+  height: 0;
+  border-radius: 0;
+  background-color: #357;
+  position: absolute;
+  text-align: center;
+  line-height: 40px;
+  font-size: 0;
+  transform: translate(20px, 20px);
+  opacity: 0;
+}
+/*# sourceMappingURL=style.css.map */
