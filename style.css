@@ -3,147 +3,175 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 40px;
-  height: 40px;
-  padding: 179px;
+  width: 280px;
+  height: 280px;
+  border-radius: 140px;
+  background-color: #fff;
   border: 1px dotted #aaa;
-  border-radius: 200px;
 }
 .circle-container {
-  position: relative;
-  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
   background-color: #aaa;
 }
-.circle-container:hover > .circle:nth-child(1) {
+.circle-container:hover .circle:nth-child(1) {
   width: 40px;
   height: 40px;
   border-radius: 20px;
   background-color: #357;
-  transform: translate(0px, 200px);
+  line-height: 40px;
+  transform: translate(-20px, 120px);
   opacity: 1;
   font-size: 1em;
   transition: all 800ms ease;
 }
-.circle-container:hover > .circle:nth-child(2) {
+.circle-container:hover .circle:nth-child(2) {
   width: 40px;
   height: 40px;
   border-radius: 20px;
   background-color: #357;
-  transform: translate(100px, 173px);
+  line-height: 40px;
+  transform: translate(50px, 101px);
   opacity: 1;
   font-size: 1em;
   transition: all 800ms ease;
 }
-.circle-container:hover > .circle:nth-child(3) {
+.circle-container:hover .circle:nth-child(3) {
   width: 40px;
   height: 40px;
   border-radius: 20px;
   background-color: #357;
-  transform: translate(173px, 100px);
+  line-height: 40px;
+  transform: translate(101px, 50px);
   opacity: 1;
   font-size: 1em;
   transition: all 800ms ease;
 }
-.circle-container:hover > .circle:nth-child(4) {
+.circle-container:hover .circle:nth-child(4) {
   width: 40px;
   height: 40px;
   border-radius: 20px;
   background-color: #357;
-  transform: translate(200px, 0px);
+  line-height: 40px;
+  transform: translate(120px, -20px);
   opacity: 1;
   font-size: 1em;
   transition: all 800ms ease;
 }
-.circle-container:hover > .circle:nth-child(5) {
+.circle-container:hover .circle:nth-child(5) {
   width: 40px;
   height: 40px;
   border-radius: 20px;
   background-color: #357;
-  transform: translate(173px, -100px);
+  line-height: 40px;
+  transform: translate(101px, -90px);
   opacity: 1;
   font-size: 1em;
   transition: all 800ms ease;
 }
-.circle-container:hover > .circle:nth-child(6) {
+.circle-container:hover .circle:nth-child(6) {
   width: 40px;
   height: 40px;
   border-radius: 20px;
   background-color: #357;
-  transform: translate(100px, -173px);
+  line-height: 40px;
+  transform: translate(50px, -141px);
   opacity: 1;
   font-size: 1em;
   transition: all 800ms ease;
 }
-.circle-container:hover > .circle:nth-child(7) {
+.circle-container:hover .circle:nth-child(7) {
   width: 40px;
   height: 40px;
   border-radius: 20px;
   background-color: #357;
-  transform: translate(0px, -200px);
+  line-height: 40px;
+  transform: translate(-20px, -160px);
   opacity: 1;
   font-size: 1em;
   transition: all 800ms ease;
 }
-.circle-container:hover > .circle:nth-child(8) {
+.circle-container:hover .circle:nth-child(8) {
   width: 40px;
   height: 40px;
   border-radius: 20px;
   background-color: #357;
-  transform: translate(-100px, -173px);
+  line-height: 40px;
+  transform: translate(-90px, -141px);
   opacity: 1;
   font-size: 1em;
   transition: all 800ms ease;
 }
-.circle-container:hover > .circle:nth-child(9) {
+.circle-container:hover .circle:nth-child(9) {
   width: 40px;
   height: 40px;
   border-radius: 20px;
   background-color: #357;
-  transform: translate(-173px, -100px);
+  line-height: 40px;
+  transform: translate(-141px, -90px);
   opacity: 1;
   font-size: 1em;
   transition: all 800ms ease;
 }
-.circle-container:hover > .circle:nth-child(10) {
+.circle-container:hover .circle:nth-child(10) {
   width: 40px;
   height: 40px;
   border-radius: 20px;
   background-color: #357;
-  transform: translate(-200px, 0px);
+  line-height: 40px;
+  transform: translate(-160px, -20px);
   opacity: 1;
   font-size: 1em;
   transition: all 800ms ease;
 }
-.circle-container:hover > .circle:nth-child(11) {
+.circle-container:hover .circle:nth-child(11) {
   width: 40px;
   height: 40px;
   border-radius: 20px;
   background-color: #357;
-  transform: translate(-173px, 100px);
+  line-height: 40px;
+  transform: translate(-141px, 50px);
   opacity: 1;
   font-size: 1em;
   transition: all 800ms ease;
 }
-.circle-container:hover > .circle:nth-child(12) {
+.circle-container:hover .circle:nth-child(12) {
   width: 40px;
   height: 40px;
   border-radius: 20px;
   background-color: #357;
-  transform: translate(-100px, 173px);
+  line-height: 40px;
+  transform: translate(-90px, 101px);
   opacity: 1;
   font-size: 1em;
   transition: all 800ms ease;
 }
-.circle {
+.circle-container:hover .shadow {
+  width: 340px;
+  height: 340px;
+  border-radius: 170px;
+  background-color: transparent;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.circle-container .circle {
   width: 0;
   height: 0;
   border-radius: 0;
-  background-color: #357;
+  background-color: transparent;
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
-  line-height: 40px;
   font-size: 0;
-  transform: translate(20px, 20px);
   opacity: 0;
 }
 /*# sourceMappingURL=style.css.map */

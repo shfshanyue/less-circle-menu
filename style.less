@@ -1,17 +1,17 @@
 @color: #357;
 @radius: 20px;
-@distance: 200px;
+@distance: 140px;
 @count: 12;
+@container-radius: 20px;
 
-.absolute-center() {
+.center() {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.radius(@radius, @color:@color) {
-    // border: @radius solid @color;
+.radius(@radius, @color:transparent) {
     width: @radius * 2;
     height: @radius * 2;
     border-radius: @radius;
@@ -19,41 +19,50 @@
 }
 
 .container {
-    .absolute-center;
-    width: @radius * 2;
-    height: @radius * 2;
-    padding: @distance - @radius - 1px;
+    .center();
+    .radius(@distance, #fff);
     border: 1px dotted #aaa;
-    border-radius: @distance;
 }
 
-.circle-container {
-    position: relative;
-    height: 100%;
-    background-color: #aaa;
-    .generate-circle();
 
-    .generate-circle(@i:1) when (@i < @count+1) {
-        &:hover > .circle:nth-child(@{i}) {
-            .radius(@radius, @color);
-            @top: round(sin(pi() * 2 * (@i - 1)/ @count) * @distance);
-            @left: round(cos(pi() * 2 * (@i - 1)/ @count) * @distance);
-            transform: translate(@top, @left);
-            opacity: 1;
-            font-size: 1em;
-            transition: all 800ms ease;
+.circle-container {
+    .center();
+    .radius(@container-radius, #aaa);
+
+    &:hover {
+        .generate-circle();
+
+        .generate-circle(@i:1) when (@i < @count+1) {
+            .circle:nth-child(@{i}) {
+                .radius(@radius, @color);
+                @top: round(sin(pi() * 2 * (@i - 1)/ @count) * @distance) - @radius;
+                @left: round(cos(pi() * 2 * (@i - 1)/ @count) * @distance) - @radius;
+                line-height: @radius * 2;
+                transform: translate(@top, @left);
+                opacity: 1;
+                font-size: 1em;
+                transition: all 800ms ease;
+            }
+            .generate-circle(@i + 1);
         }
-        .generate-circle(@i + 1);
+
+        .shadow {
+            .radius(@distance + 30);
+            .center();
+        }
+    }
+
+    .circle {
+        .radius(0);
+        .center();
+        text-align: center;
+        font-size: 0;
+        opacity: 0;
+        &:hover {
+            
+        }
     }
 }
 
-.circle {
-    .radius(0);
-    position: absolute;
-    text-align: center;
-    line-height: @radius * 2;
-    font-size: 0;
-    transform: translate(@radius, @radius);
-    opacity: 0;
-}
+
 
