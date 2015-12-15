@@ -22,7 +22,7 @@ body {
 .radius(@radius, @color: transparent) {
     width: @radius * 2;
     height: @radius * 2;
-    border-radius: @radius;
+    border-radius: 50%;
     background-color: @color;
     box-sizing: border-box;
 }
@@ -33,7 +33,6 @@ body {
         @top: round(sin(pi() * 2 * (@i - 1)/ @count) * @distance) - @circle-radius;
         @left: round(cos(pi() * 2 * (@i - 1)/ @count) * @distance) - @circle-radius;
         transform: translate(@top, @left);
-        line-height: @circle-radius * 2;
         opacity: 1;
         font-size: 1em;
         transition: all 800ms ease;
@@ -55,9 +54,11 @@ body {
     .center();
     font-size: 0;
     opacity: 0;
-    cursor: pointer;
+    transition: all 800ms ease;
+    line-height: @circle-radius * 2;
     text-align: center;
     color: #ffc;
+    cursor: pointer;
 }
 
 .btn, 
